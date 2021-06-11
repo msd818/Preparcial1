@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9D6AB8"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnSalarioMayor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#8439AC"
+        android:text="Salario mayor"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPersonaMayor" />
+
+    <Button
+        android:id="@+id/btnSalarioMenor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#8439AC"
+        android:text="Salario menor"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalarioMayor"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPersonaMenor" />
+
+    <Button
+        android:id="@+id/btnAgregarPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#8439AC"
+        android:text="Agregar persona"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCargo" />
+
+    <Button
+        android:id="@+id/btnPersonaMenor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#8439AC"
+        android:text="Persona menor"
+        android:textColor="#070707"
+        app:iconTint="#FFFFFF"
+
+        app:layout_constraintEnd_toStartOf="@+id/btnPersonaMayor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarPersona" />
+
+    <Button
+        android:id="@+id/btnPersonaMayor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#8439AC"
+        android:text="Persona mayor"
+        android:textColor="#050505"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarPersona" />
+
+    <Button
+        android:id="@+id/btnInfoPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#8439AC"
+        android:text="Info persona"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalarioMayor" />
+
+    <Button
+        android:id="@+id/btnSalarioPromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#8439AC"
+        android:text="Salario promedio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btnInfoPersona"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalarioMenor" />
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="364dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Diligencie el siguiente formulario"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bordes"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+
+        android:textColorHint="#090909"
+        app:layout_constraintEnd_toStartOf="@+id/txtLastName"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bordes"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColorHint="#040404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="248dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bordes"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <EditText
+        android:id="@+id/txtCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bordes"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Cargo"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtSalario"
+        android:layout_width="131dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bordes"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Salario"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColorHint="#040404"
+
+        app:layout_constraintEnd_toStartOf="@+id/txtEdad"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCargo" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="122dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/bordes"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number"
+        android:padding="16dp"
+
+        android:textColorHint="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCargo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
